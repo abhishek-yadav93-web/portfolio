@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+    <title>about abhishek</title>
+</head>
+
+<body>
+    <div class="port">
+        <nav>
+            <div class="nav-logo">AY</div>
+            <div class="nav-links">
+                <a onclick="scrollToSection('about')">About</a>
+                <a onclick="scrollToSection('skills')">Skills</a>
+                <a onclick="scrollToSection('projects')">Projects</a>
+                <a onclick="scrollToSection('experience')">Experience</a>
+                <a onclick="scrollToSection('contact')">Contact</a>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <div class="hero-halo"></div>
+            <div class="hero-eyebrow">Full-stack Developer| Data Analytics|AI/ML</div>
+            <h1 class="hero-name">Abhishek<br><span>Yadav</span></h1>
+            <div class="hero-role" id="typewriter"><span class="cursor"></span></div>
+            <div class="hero-cta">
+                <button class="btn-primary"
+                    onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View my
+                    work</button>
+                <button class="btn-ghost"
+                    onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get in
+                    touch</button>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section" id="about">
+            <div class="section-label">About</div>
+
+            <h2 class="section-title">
+                Building scalable applications<br>
+                and solving real-world problems.
+            </h2>
+
+            <p class="about-text">
+                I'm <strong>Abhishek Yadav</strong>, a passionate
+                <strong>Full-Stack Developer</strong> specializing in
+                <strong>Python, FastAPI, Data Analytics, and AI/ML</strong>.
+                I enjoy building efficient web applications, designing APIs,
+                analyzing data, and developing intelligent solutions that create
+                real business value.
+            </p>
+
+            <p class="about-text" style="margin-top: 1rem;">
+                I have experience working with modern technologies including
+                <strong>Python, FastAPI, JavaScript, HTML, CSS, SQL, Machine Learning,
+                    and Data Analytics</strong>. I focus on writing clean, maintainable
+                code and continuously learning new technologies to improve my skills.
+            </p>
+
+            <div class="stats-row">
+                <div class="stat-cell">
+                    <span class="stat-num">4+</span>
+                    <div class="stat-desc">Projects Completed</div>
+                </div>
+
+                <div class="stat-cell">
+                    <span class="stat-num">12+</span>
+                    <div class="stat-desc">Core Technologies</div>
+                </div>
+
+                <div class="stat-cell">
+                    <span class="stat-num">100%</span>
+                    <div class="stat-desc">Passion for Learning</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section" id="skills">
+            <div class="section-label">Skills</div>
+            <div class="skill-group">
+                <div class="skill-group-label">Frontend</div>
+                <div class="skills-grid">
+                    <div class="skill-tag">React</div>
+                    <div class="skill-tag">TypeScript</div>
+                    <div class="skill-tag">Next.js</div>
+                    <div class="skill-tag">CSS</div>
+                    <div class="skill-tag">Tailwind CSS</div>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-group-label">Backend &amp; Data</div>
+                <div class="skills-grid">
+                    <div class="skill-tag">Node.js</div>
+                    <div class="skill-tag">Express</div>
+                    <div class="skill-tag">MongoDB</div>
+                    <div class="skill-tag">PostgreSQL</div>
+                    <div class="skill-tag">FAST API</div>
+                    <div class="skill-tag">Django Framework</div>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-group-label">Tools &amp; Workflow</div>
+                <div class="skills-grid">
+                    <div class="skill-tag">Git / GitHub</div>
+                    <div class="skill-tag">CRM</div>
+                    <div class="skill-tag">SaaS</div>
+                    <div class="skill-tag">MS 365</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section" id="projects">
+            <div class="section-label">Projects</div>
+            <h2 class="section-title">I've built.</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="proj-arrow">↗</div>
+                    <div class="proj-name">Shop Flow - E Commerce</div>
+                    <div class="proj-desc"> A full-featured e-commerce platform that allows users to browse products,
+                        search by category, manage their shopping cart, and place orders seamlessly..</div>
+                    <div class="proj-tags">
+                        <span class="proj-tag">HTML/CSS</span>
+                        <span class="proj-tag">React.js</span>
+                        <span class="proj-tag">Django Framework</span>
+                        <span class="proj-tag">SQL Lite</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="proj-arrow">↗</div>
+                    <div class="proj-name">RESTful Blog API</div>
+                    <div class="proj-desc">
+                        Developed a RESTful Blog API using FastAPI with complete CRUD operations and SQLite database
+                        integration. Built responsive frontend pages using HTML, CSS, and JavaScript, focusing on clean
+                        architecture and scalable backend development.
+                    </div>
+                    <div class="proj-tags">
+                        <span class="proj-tag">FastAPI</span>
+                        <span class="proj-tag">SQLite</span>
+                        <span class="proj-tag">HTML</span>
+                        <span class="proj-tag">CSS</span>
+                        <span class="proj-tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="proj-arrow">↗</div>
+                    <div class="proj-name">Fake News Detection System</div>
+                    <div class="proj-desc">
+                        Machine learning-based system for detecting fake news using NLP techniques. Implemented data
+                        preprocessing, TF-IDF feature extraction, and trained classification models to accurately
+                        distinguish between real and fake news articles.
+                    </div>
+                    <div class="proj-tags">
+                        <span class="proj-tag">Python</span>
+                        <span class="proj-tag">NLP</span>
+                        <span class="proj-tag">TF-IDF</span>
+                        <span class="proj-tag">AI/ML</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="proj-arrow">↗</div>
+                    <div class="proj-name">AI-Powered Data Extraction and Reporting System</div>
+                    <div class="proj-desc">
+                        Python-based data extraction and reporting platform with ChatGPT API integration, enabling
+                        automated data processing, transformation, and Excel report generation using Pandas and NumPy.
+                    </div>
+                    <div class="proj-tags">
+                        <span class="proj-tag">Python</span>
+                        <span class="proj-tag">ChatGPT API</span>
+                        <span class="proj-tag">Pandas</span>
+                        <span class="proj-tag">NumPy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section" id="experience">
+            <div class="section-label">Experience</div>
+            <h2 class="section-title">Where I've worked.</h2>
+            <div class="experience-list">
+                <div class="exp-item">
+                    <div class="exp-period">2023 — present</div>
+                    <div>
+                        <div class="exp-role">Business Support Executive</div>
+                        <div class="exp-company">Techno Design GmbH Private Limited</div>
+                        <div class="exp-desc">SaaS Platform Handling: Worked with cloud-based SaaS applications for data
+                            entry, record management, and
+                            realtime updates.
+                        </div>
+                    </div>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-period">Nov 2025--Jan 2026</div>
+                    <div>
+                        <div class="exp-role">Software Developer</div>
+                        <div class="exp-company"> Paramatrix Technologies Pvt. Ltd., Sanpada, Maharashtra</div>
+                        <div class="exp-desc">Joined as a Software Developer Intern, where I worked with Python and
+                            FastAPI to design and develop web
+                            applications and RESTful APIs.</div>
+                    </div>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-period">Feb 2025 - Jun 2025</div>
+                    <div>
+                        <div class="exp-role">Web Dev Intern</div>
+                        <div class="exp-company">Slash Mark IT Solutions Pvt Ltd</div>
+                        <div class="exp-desc">Developed full-stack application features using Python FastAPI, MongoDB,
+                            and JavaScript to create fast and
+                            userfriendly web applications.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-strip" id="contact">
+    <div class="contact-title">Let's Connect</div>
+    <div class="contact-sub">
+        Software Developer specializing in Python, FastAPI, Machine Learning, and AI-powered applications. Open to full-time opportunities and collaborative projects.
+    </div>
+    <div class="contact-links">
+        <a class="contact-link" href="href=mailto:ay930529@gmail.com"><i class="ti ti-mail" aria-hidden="true"></i> ay930529@email.com</a>
+        <a class="contact-link" href="https://github.com/abhishek-yadav93-web" target="_blank"><i class="ti ti-brand-github" aria-hidden="true"></i> github</a>
+        <a class="contact-link" href="https://www.linkedin.com/in/abhishek-yadav-27354822b" target="_blank"><i class="ti ti-brand-linkedin" aria-hidden="true"></i> linkedin</a>
+        <a class="contact-link" href="./ABHISHEK YADAV.pdf" target="_blank"><i class="ti ti-file-cv" aria-hidden="true"></i> résumé</a>
+    </div>
+</div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
